@@ -8,6 +8,7 @@ To optimize infrastructure costs (FinOps), all compute workloads are handled 100
 
 🏗️ Architecture & Data Flow
 
+```mermaid
 graph TD
     subgraph External [External Sources / APIs]
         A[CoinGecko & GitHub]
@@ -26,7 +27,7 @@ graph TD
     A -->|dlt & requests| B
     D -->|boto3 / PySpark| E
     E -->|JDBC Batching| F
-    D -->|dbt models| F
+    D -->|dbt models| F ```
 
 
 🛠️ Tech Stack Components
