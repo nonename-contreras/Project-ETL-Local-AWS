@@ -1,0 +1,13 @@
+gold_models:
+  target: dev
+  
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ env_var('RDS_HOST') }}"
+      user: "{{ env_var('RDS_USER', 'postgres') }}"
+      password: "{{ env_var('RDS_PASSWORD') }}"
+      port: 5432
+      dbname: warehouse
+      schema: gold
+      threads: 4

@@ -1,0 +1,7 @@
+name: 'gold_models'
+version: '1.0.0'
+config-version: 2
+profile: 'gold_models'
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]

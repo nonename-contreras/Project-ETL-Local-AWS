@@ -1,0 +1,9 @@
+.env
+
+__pycache__/
+*.pyc
+
+project_etl/dags/dbt_project/target/
+project_etl/dags/dbt_project/logs/
+project_etl/dags/dbt_project/dbt_packages/
+project_etl/dags/dbt_project/.user.yml

@@ -1,0 +1,30 @@
+sources:
+  - name: staging
+    database: warehouse
+    schema: staging
+    tables:
+      - name: stg_crypto
+        columns:
+          - name: id
+            tests:
+              - not_null
+      - name: stg_github
+        columns:
+          - name: id
+            tests:
+              - not_null
+
+models:
+  - name: gold_crypto
+    description: "Tabla final deduplicada de criptomonedas lista para análisis"
+    columns:
+      - name: crypto_id
+        tests:
+          - not_null
+
+  - name: gold_github
+    description: "Tabla Gold con métricas de repositorios/commits de GitHub"
+    columns:
+      - name: repo_id
+        tests:
+          - not_null

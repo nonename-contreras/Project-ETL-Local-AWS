@@ -1,0 +1,13 @@
+# AWS y orquestación base
+boto3==1.28.*
+
+# Extracción y Carga 
+dlt[s3]==0.4.*
+requests
+
+# Motor de procesamiento distribuido
+pyspark==3.4.1
+
+# Transformación y Data Warehouse
+dbt-postgres==1.6.*
+
